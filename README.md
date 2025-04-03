@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 CryptoStats
 
-## Getting Started
+CryptoStats is a sleek, real-time cryptocurrency tracking platform that delivers up-to-date prices, market trends, and insights in a **minimalist and fast** interface. Built with **Next.js, TypeScript, and Framer Motion**, it ensures an ultra-smooth experience for traders and crypto enthusiasts alike.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
+✅ **Live Market Data** – Real-time prices, market caps, and 24H changes.  
+✅ **Beautiful UI** – Clean, modern, and easy to use.  
+✅ **Smooth Page Transitions** – Powered by Framer Motion.  
+✅ **CoinGecko API Integration** – Reliable and accurate data.  
+✅ **Dark Mode Support** – Eye-friendly design.
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, TypeScript, Tailwind CSS
+- **Animations:** Framer Motion
+- **Data Source:** CoinGecko API
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/cryptostats.git
+   cd cryptostats
+   Install dependencies:
+   ```
+
+bash
+Copy
+Edit
+npm install
+
+# or
+
+yarn install
+Run the development server:
+
+bash
+Copy
+Edit
 npm run dev
+
 # or
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔗 API Configuration
+CryptoStats fetches data from CoinGecko's API. No API key is required, but make sure to respect rate limits.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+API Endpoint Used:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+bash
+Copy
+Edit
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1
+📌 Project Structure
+bash
+Copy
+Edit
+/cryptostats
+│── /app # Next.js App Router
+│── /components # Reusable UI components
+│── /styles # Global styles (Tailwind)
+│── /lib # API calls & utilities
+│── /public # Static assets
+│── /pages # (If using Pages Router)
+│── README.md # Project documentation
+🎨 UI & Animations
+CryptoStats uses Framer Motion for smooth transitions. If you encounter issues, ensure you have:
 
-## Learn More
+Copy
+Edit
+npm install framer-motion
+🚀 Deployment
+Easily deploy on Vercel:
 
-To learn more about Next.js, take a look at the following resources:
+bash
+Copy
+Edit
+vercel deploy
+📜 License
+This project is open-source under the MIT License. Feel free to fork and contribute!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> > > > > > > e272ec26aff5db24eaa5b7344bfe577c3a913fd4
