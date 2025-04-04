@@ -1,29 +1,3 @@
-// type MarketData = {
-//   id: string;
-//   symbol: string;
-//   name: string;
-//   image: string;
-//   current_price: number;
-//   market_cap: number;
-//   market_cap_rank: number;
-//   total_volume: number;
-//   high_24h: number;
-//   low_24h: number;
-//   price_change_24h: number;
-//   price_change_percentage_24h: number;
-//   market_cap_change_24h: number;
-//   market_cap_change_percentage_24h: number;
-//   circulating_supply: number;
-//   total_supply: number | null;
-//   max_supply: number | null;
-//   ath: number;
-//   ath_change_percentage: number;
-//   ath_date: string;
-//   last_updated: string;
-//   sparkline_in_7d?: {
-//     price: number[];
-//   };
-// };
 
 export default async function getStats() {
   try {
@@ -32,7 +6,6 @@ export default async function getStats() {
       {
         headers: {
           "Content-Type": "application/json",
-          "Cache-Control": "no-cache",
         },
       }
     );
@@ -45,6 +18,7 @@ export default async function getStats() {
     }
 
     const stats = await response.json();
+    console.log(stats)
     return stats;
   } catch (error) {
     console.error("Failed to fetch market stats:", error);

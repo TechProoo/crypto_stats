@@ -1,4 +1,5 @@
 import getStats from "@/lib/fetch";
+import Link from "next/link";
 
 export default async function TableData() {
   const data = await getStats(); // Fetch crypto market data
@@ -34,7 +35,12 @@ export default async function TableData() {
                     alt={coin.name}
                     className="w-7 h-7 rounded-full"
                   />
-                  <span className="font-medium">{coin.name}</span>
+                  <Link
+                    href={`/${coin.id}`}
+                    className="font-medium hover:underline"
+                  >
+                    {coin.name}
+                  </Link>
                   <span className="text-gray-400 text-sm">
                     ({coin.symbol.toUpperCase()})
                   </span>

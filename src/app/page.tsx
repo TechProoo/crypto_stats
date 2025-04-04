@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className=" mt-10">
       <div className="text-center text-white">
-        <h1 className="md:text-7xl text-3xl text-center leading-20 text-white">
+        <h1 className="md:text-7xl text-3xl text-center md:leading-20 text-white">
           Largest
           <p className=" font-black">Crypto</p>
           Marketplace
